@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import ConfirmationModal from './components/ConfirmationModal';
 
+
 function App() {
   return (
     <div className="AppContainer">
@@ -22,7 +23,9 @@ function App() {
           <h2>Note Title</h2>
           <p>Note Content</p>
         </div>
-        <ConfirmationModal title="title"></ConfirmationModal>
+        <>
+        <ConfirmationModal />
+        </>
       </div>
     </div>
   );
