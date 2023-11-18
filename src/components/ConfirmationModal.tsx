@@ -47,11 +47,13 @@ const ConfirmationModal = () => {
 
                 <Typography
                 sx={{ fontWeight: 600,
-                      fontSize: 'h4.fontSize' }}>
+                      fontSize: 'h4.fontSize' }}
+                      aria-label="Thanks for sharing!">
                   Thanks for sharing!
                 </Typography>
                 <Typography
-                sx={{ fontSize: 'h6.fontSize'}}>
+                sx={{ fontSize: 'h6.fontSize'}}
+                aria-label="Your submission is under review.">
                   Your submission is under review.
                 </Typography>
 
@@ -64,7 +66,8 @@ const ConfirmationModal = () => {
                     mt: 3,
                     mb: 3 }}>
               </Box>
-              <Typography sx={{ fontSize: 16 }}>
+              <Typography sx={{ fontSize: 16 }}
+                          aria-label="Follow us and spread the news">
                 Follow us and spread the news
               </Typography>
               <Container
@@ -73,18 +76,19 @@ const ConfirmationModal = () => {
                       justifyContent: 'space-evenly',
                       width: '60%'}}>
               
-              <ShareIcon></ShareIcon>
+              <ShareIcon aria-label="Share"></ShareIcon>
               
-              <FacebookIcon></FacebookIcon>
+              <FacebookIcon aria-label="Facebook"></FacebookIcon>
               
-              <InstagramIcon></InstagramIcon>
+              <InstagramIcon aria-label="Instagram"></InstagramIcon>
               
-              <TwitterIcon></TwitterIcon>
+              <TwitterIcon aria-label="Twitter"></TwitterIcon>
               
-              <GitHubIcon></GitHubIcon>
+              <GitHubIcon aria-label="Github"></GitHubIcon>
                   
               </Container>
-              <Typography>
+              <Typography
+                aria-label="Phlask">
                 #PHLASK
               </Typography>
           </Stack>
