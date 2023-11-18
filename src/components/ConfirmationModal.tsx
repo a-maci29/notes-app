@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-import {  Modal, Box, Typography, Stack } from '@mui/material';
+import {  Modal, Box, Typography, Stack, Container } from '@mui/material';
+import ShareIcon from '@mui/icons-material/Share';
 // import styles from './styles/ConfirmationModal.module.scss';
 
 
@@ -58,19 +59,32 @@ const ConfirmationModal = () => {
                      mt: 3,
                      mb: 3 }}>
                 </Box>
-            <Typography id="modal-modal-title" variant="h6" component="h2">
-              Text in a modal
+            <Typography sx={{ fontSize: 16 }}>
+              Follow us and spread the news
             </Typography>
-            <Typography id="modal-modal-description" sx={{ mt: 2, border: 1, p: 2}}>
-              BOX ONE
+            <Container
+              sx={{ display: 'flex',
+                    flexDirection: 'row'}}>
+              <Box>
+                BOX ONE
+              </Box>
+              <Box>
+                BOX ONE
+              </Box>
+              <Box>
+                BOX ONE
+              </Box>
+              <Box>
+                BOX ONE
+              </Box>
+              <Box>
+                BOX ONE
+              </Box>
+              
+            </Container>
+            <Typography>
+              #PHLASK
             </Typography>
-            <Typography id="modal-modal-description" sx={{ mt: 2, border: 1, p: 2 }}>
-              BOX TWO
-            </Typography>
-            <Typography id="modal-modal-description" sx={{ mt: 2, border: 1, p: 2 }}>
-              BOX THREE
-            </Typography>
-
           </Stack>
         </Modal>
       </>
