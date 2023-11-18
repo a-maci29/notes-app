@@ -2,8 +2,10 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import {  Modal, Box, Typography, Stack, Container } from '@mui/material';
 import ShareIcon from '@mui/icons-material/Share';
-// import styles from './styles/ConfirmationModal.module.scss';
-
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const ConfirmationModal = () => {
 
@@ -23,8 +25,8 @@ const ConfirmationModal = () => {
         <Modal
           open={open}
           onClose={handleClose}
-          aria-labelledby="modal-modal-title"
-          aria-describedby="modal-modal-description"
+          aria-labelledby="Confirmation"
+          aria-describedby="Confirmation"
         >
           <Stack
             sx={{
@@ -42,6 +44,7 @@ const ConfirmationModal = () => {
                 display: 'flex',
                 textAlign: 'center'
                 }}>
+
                 <Typography
                 sx={{ fontWeight: 600,
                       fontSize: 'h4.fontSize' }}>
@@ -50,41 +53,40 @@ const ConfirmationModal = () => {
                 <Typography
                 sx={{ fontSize: 'h6.fontSize'}}>
                   Your submission is under review.
-                </Typography>   
+                </Typography>
+
               </Box>
               <Box
-                  sx={{border: 2,
-                     width:'100%',
-                     height: '50%',
-                     mt: 3,
-                     mb: 3 }}>
-                </Box>
-            <Typography sx={{ fontSize: 16 }}>
-              Follow us and spread the news
-            </Typography>
-            <Container
-              sx={{ display: 'flex',
-                    flexDirection: 'row'}}>
-              <Box>
-                BOX ONE
+                sx={{
+                    border: 2,
+                    width:'100%',
+                    height: '50%',
+                    mt: 3,
+                    mb: 3 }}>
               </Box>
-              <Box>
-                BOX ONE
-              </Box>
-              <Box>
-                BOX ONE
-              </Box>
-              <Box>
-                BOX ONE
-              </Box>
-              <Box>
-                BOX ONE
-              </Box>
+              <Typography sx={{ fontSize: 16 }}>
+                Follow us and spread the news
+              </Typography>
+              <Container
+                sx={{ display: 'flex',
+                      flexDirection: 'row',
+                      justifyContent: 'space-evenly',
+                      width: '60%'}}>
               
-            </Container>
-            <Typography>
-              #PHLASK
-            </Typography>
+              <ShareIcon></ShareIcon>
+              
+              <FacebookIcon></FacebookIcon>
+              
+              <InstagramIcon></InstagramIcon>
+              
+              <TwitterIcon></TwitterIcon>
+              
+              <GitHubIcon></GitHubIcon>
+                  
+              </Container>
+              <Typography>
+                #PHLASK
+              </Typography>
           </Stack>
         </Modal>
       </>
