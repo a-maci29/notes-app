@@ -6,6 +6,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import styles from '../styles/ConfirmationModal';
 
 const ConfirmationModal = () => {
 
@@ -27,6 +28,7 @@ const ConfirmationModal = () => {
           onClose={handleClose}
           aria-labelledby="Confirmation"
           aria-describedby="Confirmation"
+          className="modal"
         >
           <Stack
             sx={{
@@ -42,7 +44,8 @@ const ConfirmationModal = () => {
               <Box
                 sx={{ flexDirection: 'column',
                 display: 'flex',
-                textAlign: 'center'
+                textAlign: 'center',
+                mt: 6
                 }}>
 
                 <Typography
@@ -74,7 +77,9 @@ const ConfirmationModal = () => {
                 sx={{ display: 'flex',
                       flexDirection: 'row',
                       justifyContent: 'space-evenly',
-                      width: '60%'}}>
+                      width: '60%',
+                      mt: 2,
+                      mb: 2}}>
               
               <ShareIcon aria-label="Share"></ShareIcon>
               
@@ -87,10 +92,13 @@ const ConfirmationModal = () => {
               <GitHubIcon aria-label="Github"></GitHubIcon>
                   
               </Container>
+              <Box
+                sx={{mt: 1, mb: 1}}>
               <Typography
                 aria-label="Phlask">
                 #PHLASK
               </Typography>
+              </Box>
           </Stack>
         </Modal>
       </>
