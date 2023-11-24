@@ -6,7 +6,6 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import styles from '../styles/ConfirmationModal';
 
 const ConfirmationModal = () => {
 
@@ -30,6 +29,10 @@ const ConfirmationModal = () => {
           aria-describedby="Confirmation"
           className="modal"
         >
+        <Box
+            sx={{
+              margin: 'auto'
+              }}>
           <Stack
             sx={{
               display: 'flex',
@@ -100,6 +103,7 @@ const ConfirmationModal = () => {
               </Typography>
               </Box>
           </Stack>
+          </Box>
         </Modal>
       </>
     )
